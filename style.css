@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Mj_Dinar";
+    src: url("fonts/Mj_Dinar One Light.ttf");
+}
+
+body {
+    font-family: Mj_Dinar, sans-serif;
+}
+    
+#logo {
+    width: 45px;
+}
+
+.nav-item {
+    font-size: 1.1em;
+}
