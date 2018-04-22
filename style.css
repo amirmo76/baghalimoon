@@ -8,9 +8,16 @@ body {
 }
     
 #logo {
-    width: 45px;
+    width: 40px;
 }
 
 .nav-item {
     font-size: 1.1em;
+}
+
+#section-1 {
+    height: 850px;
+    background-image: url("img/bg-sec-1-cartoon.jpg");
+    background-size: cover;
+    background-position: center;
 }
