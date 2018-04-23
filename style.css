@@ -11,13 +11,68 @@ body {
     width: 40px;
 }
 
+#logo2 {
+    width: 300px;
+}
+
+#banner-text {
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 0.5em;
+}
+
 .nav-item {
     font-size: 1.1em;
 }
 
 #section-1 {
-    height: 850px;
+    height: 800px;
     background-image: url("img/bg-sec-1-cartoon.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section-2 {
+    height: 400px;
+    background-color: #f6f4f1;
+}
+
+
+#section-3 {
+    height: 400px;
+    background-image: url("img/bg-sec2-bas.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section-4 {
+    height: 400px;
+    background-color: #f6f4f1;
+}
+
+#section-5 {
+    height: 400px;
+    background-color: #f6f4f1;
+}
+
+.overlay-row-dark {
+    background-color: rgba(0, 0, 0, 0.82);
+    height: 100%;
+}
+
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #000;
+    -moz-box-shadow: 0 8px 6px -6px #000;
+    box-shadow: 0 8px 6px -9px #000;
+
+    /* the rest of your styling */
 }
