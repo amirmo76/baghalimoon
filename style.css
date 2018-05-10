@@ -189,9 +189,31 @@ body {
     margin: 0 auto;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#privacy {
+    min-height: 100%;
+    margin-top: 100px;
+}
+
 
 @media (max-width: 768px) {
     .carousel-item {
         width: 300px;
+    }
+}
+
+@media (max-width: 1050px) and (min-width: 920px){
+    .nav-link {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 920px) and (min-width: 768px){
+    .nav-link {
+        font-size: 0.7em;
     }
 }
