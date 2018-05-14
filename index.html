@@ -285,18 +285,19 @@
             <div class="row align-items-center">
                 <div class="col-md-6 text-center">
                     <h1 class="display-4 my-5">ارتباط با ما</h1>
-                    <form class="mx-auto mb-4">
+                    <form class="mx-auto mb-4" method="post" id="emailform" name="myemailform" action="https://baghalimoon.com/emailformcontroller.php" >
+
                         <div class="form-group">
-                            <input type="text" class="form-control" id="name" placeholder="نام و نام خانوادگی">
+                            <input type="text" class="form-control"  name="name" id="name" placeholder="نام و نام خانوادگی">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="email" placeholder="ایمیل">
+                            <input type="email" class="form-control"  name="email" id="email" placeholder="ایمیل">
                         </div>
                         <div class="form-group">
-                            <textarea type="text" class="form-control" id="message">
+                            <textarea type="text" class="form-control"  name="message" id="message">
                             </textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">ارسال پیام</button>
+                        <button type="submit" value="Send Form" class="btn btn-primary">ارسال پیام</button>
                     </form>
                 </div>
                 <div class="col-md-6 img">
@@ -370,7 +371,33 @@
                     } 
                 });
             });
+			
+
+			
         </script>
+		
+		
+		<script>
+			$("#emailform").submit(function(e) {
+
+				var url = "https://baghalimoon.com/emailformcontroller.php"; 
+
+				$.ajax({
+					   type: "POST",
+					   url: url,
+					   data: $("#emailform").serialize(), 
+					   success: function(data)
+					   {
+						   alert(data); 
+					   }
+					 });
+
+				e.preventDefault(); 
+			});
+		
+		</script>
+		
+		
         <!-- Chatra {literal} -->
         <script>
             (function(d, w, c) {
