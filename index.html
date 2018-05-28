@@ -70,6 +70,7 @@
 
             <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
                 <a class="navbar-brand w-10 mr-auto pl-2" href="#top"><img src="img/logo-dark.png" id="logo"></a>
+                <a class="navbar-brand w-10 mr-auto pl-2" href="#top"><img src="img/logo-dark.png" id="logo" alt="بقالیمون"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -121,6 +122,7 @@
 
                 <div class="col-sm-8 text-center h-50 my-auto">
                     <img src="img/logo2.png" id="logo2">
+                    <img src="img/logo2.png" id="logo2" alt="فروشگاه بقالیمون">
                     <h2 id="banner-text">هیچ وقت خرید از بقالی اینقدر راحت نبوده</h2>
                 </div>
 
@@ -147,6 +149,7 @@
                     <div class="col-md-4">
                         <div class="card no-border no-border-radius"  id="card-grocerybag">
                             <img src="img/grocerybag.jpg" alt="" class="img-fluid">
+                            <img src="img/grocerybag.jpg" alt="با خیالی آسوده خرید خود را انجام دهید فروشگاه بقالیمون" class="img-fluid">
                         </div>
                     </div>
 
@@ -166,6 +169,7 @@
                     <div class="col-md-4">
                         <div class="card no-border no-border-radius"  id="card-groceries">
                             <img src="img/groceries.jpg" alt="" class="img-fluid">
+                            <img src="img/groceries.jpg" alt="هر آنچه که از یک بقالی می خواهید و بیشتر همه در بقالیمون " class="img-fluid">
                         </div>
                     </div>
 
@@ -183,6 +187,7 @@
                     <div class="col-md-4">
                         <div class="card no-border no-border-radius"  id="card-grocerybas">
                             <img src="img/grocerybas.jpg" alt="" class="img-fluid">
+                            <img src="img/grocerybas.jpg" alt="جشنواره ها و پیشنهادات متنوع در بقالیمون" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -202,12 +207,14 @@
                         <div class="row">
                             <div class="col-sm-6 text-center download-box">
                                 <img src="img/android.png" alt="android" id="android">
+                                <img src="img/android.png" alt="اپلیکیشن اندروید بقالیمون" id="android">
                                 <button class="btn btn-primary d-block w-100 mx-auto mt-4 disabled">داناود از کافه بازار</button>
                                 <button onclick=" window.open('https://baghalimoon.com/App/baghalimoon.apk');"  class="btn btn-primary d-block w-100 mx-auto mt-1">داناود مستقیم از سایت</button>
                             </div>
                             <div class="col-sm-6 text-center download-box">
                                 <div>
                                     <img src="img/apple.png" alt="android" id="apple">
+                                    <img src="img/apple.png" alt="اپلیکیشن ios بقالیمون" id="apple">
                                     <button class="btn btn-primary d-block w-100 mx-auto mt-4 disabled">داناود از اپ استور</button>
                                     <button  class="btn btn-primary d-block w-100 mx-auto mt-1 disabled">داناود مستقیم از سایت</button>
                                 </div>
@@ -216,6 +223,7 @@
                     </div>
                     <div class="col-md-6 p-5 text-center d-none d-md-block">
                         <img src="img/phone.png" alt="phone" id="phone" class="img-fluid">
+                        <img src="img/phone.png" alt="اپلیکیشن بقالیمون" id="phone" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -273,7 +281,7 @@
                 <div class="col-md-6 text-center">
                     <h1 class="display-4 mt-5">درباره ما</h1>
                     <p class="p-5">
-                        هایپر مارکت اپلیکیشینی بقالیمون با هدف ساده کردن زندگی در شهرهای بزرگ و لذت بخش کردن خرید همچنین رضایت مندی مشتری از خدمت و قیمت شروع به کار نمود انشالله که بتوانیم در این راستا انجام وظیفه نماییم و باعث آرامش آسایش و رفاه شهروندان مشهد مقدس شهر نور و آفتاب باشیم
+                        هایپر مارکت اپلیکیشینی بقالیمون با هدف ساده کردن زندگی در کلان شهرها و لذت بخش کردن خرید همچنین رضایت مندی مشتری از خدمت و قیمت شروع به کار نمود انشالله که بتوانیم در این راستا انجام وظیفه نماییم و باعث آرامش آسایش و رفاه شهروندان مشهد مقدس شهر نور و آفتاب باشیم
                     </p>
                 </div>
             </div>
@@ -285,18 +293,19 @@
             <div class="row align-items-center">
                 <div class="col-md-6 text-center">
                     <h1 class="display-4 my-5">ارتباط با ما</h1>
-                    <form class="mx-auto mb-4">
+                    <form class="mx-auto mb-4" method="post" id="emailform" name="myemailform" action="https://baghalimoon.com/emailformcontroller.php" >
+
                         <div class="form-group">
-                            <input type="text" class="form-control" id="name" placeholder="نام و نام خانوادگی">
+                            <input type="text" class="form-control"  name="name" id="name" placeholder="نام و نام خانوادگی">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="email" placeholder="ایمیل">
+                            <input type="email" class="form-control"  name="email" id="email" placeholder="ایمیل">
                         </div>
                         <div class="form-group">
-                            <textarea type="text" class="form-control" id="message">
+                            <textarea type="text" class="form-control"  name="message" id="message">
                             </textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">ارسال پیام</button>
+                        <button type="submit" value="Send Form" class="btn btn-primary">ارسال پیام</button>
                     </form>
                 </div>
                 <div class="col-md-6 img">
@@ -310,11 +319,12 @@
             <div class="container text-white py-4">
                 <div class="row">
                     <div class="col-md-4 text-center d-flex">
-                        <p class="align-self-center mx-auto"> طراحی و راه اندازی توسط امیر محسنی مقدم
+                        <p class="align-self-center mx-auto"> طراحی و راه اندازی توسط تیم توسعه بقالیمون
                         </p>
                     </div>
                     <div class="col-md-4 text-center">
                         <a href="" class="social">
+                        <a href="https://www.instagram.com/baghalimoon" class="social">
                             <i class="fab fa-instagram"></i>
                         </a>
                         <a href="https://t.me/baghalimoon" class="social">
@@ -370,7 +380,33 @@
                     } 
                 });
             });
+			
+
+			
         </script>
+		
+		
+		<script>
+			$("#emailform").submit(function(e) {
+
+				var url = "https://baghalimoon.com/emailformcontroller.php"; 
+
+				$.ajax({
+					   type: "POST",
+					   url: url,
+					   data: $("#emailform").serialize(), 
+					   success: function(data)
+					   {
+						   alert(data); 
+					   }
+					 });
+
+				e.preventDefault(); 
+			});
+		
+		</script>
+		
+		
         <!-- Chatra {literal} -->
         <script>
             (function(d, w, c) {
