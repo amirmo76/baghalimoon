@@ -6,7 +6,7 @@
 body {
     font-family: Mj_Dinar, sans-serif;
     background-color: #f6f4f1;
-    overflow-x: hidden;
+    overflow-x:hidden;
 }
 
 a:hover {
@@ -227,4 +227,22 @@ html, body {
     .nav-link {
         font-size: 0.7em;
     }
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    -user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+img { 
+  -webkit-user-drag: none; 
+  -khtml-user-drag: none; 
+  -moz-user-drag: none; 
+  -o-user-drag: none; 
+  user-drag: none; 
 }
